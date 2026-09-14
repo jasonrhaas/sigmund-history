@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zygmunt "Sigmund" Haas — Wartime Biography</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #0f1216;
+    --panel: #171b21;
+    --border: #2a2f37;
+    --text: #e8e6e1;
+    --muted: #9aa2ad;
+    --accent: #c9a15a;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: Georgia, "Times New Roman", serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 20px 64px;
+  }
+  .hero {
+    width: 100%;
+    max-width: 720px;
+    text-align: center;
+  }
+  .hero img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid var(--accent);
+    margin-bottom: 24px;
+  }
+  h1 {
+    font-size: 1.9rem;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    margin: 0 0 8px;
+  }
+  .subtitle {
+    color: var(--muted);
+    font-size: 1rem;
+    font-style: italic;
+    margin: 0 0 48px;
+  }
+  .versions {
+    width: 100%;
+    max-width: 640px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  a.card {
+    display: block;
+    text-decoration: none;
+    color: var(--text);
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 22px 24px;
+    transition: border-color 0.15s ease, transform 0.15s ease;
+  }
+  a.card:hover {
+    border-color: var(--accent);
+    transform: translateY(-1px);
+  }
+  a.card .label {
+    font-size: 1.15rem;
+    margin-bottom: 6px;
+  }
+  a.card .label .tag {
+    display: inline-block;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    border-radius: 999px;
+    padding: 2px 9px;
+    margin-left: 10px;
+    vertical-align: middle;
+  }
+  a.card .desc {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 0.88rem;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+  footer {
+    margin-top: 56px;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 0.78rem;
+    color: var(--muted);
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #f7f4ee;
+      --panel: #ffffff;
+      --border: #ddd6c8;
+      --text: #221f1a;
+      --muted: #6b6459;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="hero">
+    <img src="assets/sigmund.jpg" alt="Zygmunt Haas">
+    <h1>Zygmunt &ldquo;Sigmund&rdquo; Haas</h1>
+    <p class="subtitle">Sergeant Pilot, No. 305 (Polish) Squadron — a wartime biography</p>
+  </div>
+
+  <div class="versions">
+    <a class="card" href="sigmund_history_claude.html">
+      <div class="label">Claude Version<span class="tag">Current</span></div>
+      <div class="desc">Zygmunt Haas — Sergeant Pilot, No. 305 (Polish) Squadron.</div>
+    </a>
+    <a class="card" href="Sigmund_Haas_Wartime_Biography_chatgpt.html">
+      <div class="label">ChatGPT Version</div>
+      <div class="desc">Sigmund Haas — A Wartime Biography.</div>
+    </a>
+  </div>
+
+  <footer>Two drafts of the same history, kept side by side while in progress.</footer>
+</body>
+</html>
